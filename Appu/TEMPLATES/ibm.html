@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Performance</title>
+</head>
+<body>
+    <div class="main">
+        <div class="main1">
+            <h1 class="head1">VEHICLE PERFORMANCE PREDICTION</h1>
+            <h2 class="head2" id="head2">ENTER THE BELOW DATA TO FIND THE VEHICLE PERFORMANCE</h2>
+        </div>
+        <div class="main2">
+            <form action="{{ url_for('predict')}}" method="post">
+                <div class="inp1">
+                    <h3>Enter no of Cylinders</h3>
+                    <input type="search" name="cylinders" id="" placeholder="in count" required>
+                </div>
+                <div class="inp2">
+                    <h3>Enter Displacement</h3>
+                    <input type="search" name="displacement" id="bs" placeholder="in miles" required>
+                </div>
+                <div class="inp3">
+                    <h3 clour="">Enter Horse Power</h3>
+                    <input type="search" name="horsepower" id="bs" placeholder="power" required>
+                </div>
+                <div class="inp4">
+                    <h3>Enter Weight</h3>
+                    <input type="search" name="weight" id="bs" placeholder="weight" required>
+                </div>
+                <div class="inp6">
+                    <h3>Enter Modal Year</h3>
+                    <input type="search" name="model_year" id="bs" placeholder="year" required>
+                </div>
+                <div class="inp7">
+                    <h3>Enter Origin</h3>
+                    <input type="search" name="origin" id="bs" placeholder="1,2,3" required>
+                </div>
+                <div class="btn"><button class="btn1"><a href="./submit.html"></a> Submit</button></div></span>
+            </form><span>
+        </div>
+    </div>
+    <style>
+        body {
+            background-image: url('https://wallpapercave.com/wp/wp6676529.jpg');
+            background-size: cover;
+            opacity: 1;
+        }
+        .main {
+            position: relative;
+            text-align: center;
+            padding: 1% 0% 1% 0%;
+            -webkit-box-shadow: 15px 20px 125px 45px rgba(0, 0, 0, 1);
+            -moz-box-shadow: 15px 20px 125px 45px rgba(0, 0, 0, 1);
+            box-shadow: 15px 20px 125px 45px rgba(0, 0, 0, 1);
+        }
+        .main2 {
+            position: relative;
+            padding-top: 1% 0% 0% 0%;
+        }
+        .btn {
+            position: relative;
+            padding-top: 4%;
+        }
+        .btn1 {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #f1f1f1;
+            color: black;
+            font-size: 20px;
+            padding: 16px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .btn1:hover {
+            background-color: rgb(47, 175, 197);
+            color: white;
+        }
+        .main3 {
+            padding: 2% 10% 3% 0%;
+        }
+        .head1 {
+            color: antiquewhite;
+            font-size: 400%;
+            text-shadow: 4px 4px 2px rgba(107, 187, 213, 0.7);
+            -webkit-box-shadow: 9px 7px 63px 14px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 9px 7px 63px 14px rgba(0, 0, 0, 0.75);
+            box-shadow: 9px 7px 63px 14px rgba(0, 0, 0, 0.75);
+        }
+        input {
+            width: 15%;
+            padding: 9px 1px;
+            box-sizing: border-box;
+            border: 1px solid rgb(126, 132, 133);
+            outline: none;
+        }
+        input:focus {
+            background-color: lightblue;
+        }
+        h2 {
+            color: #BDE0FE;
+            font-size: 25px;
+        }
+        h3 {
+            color: cornsilk;
+        }
+    </style>
+</body>
+</html>
